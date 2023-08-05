@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="../assets/icons/camiseta-de-manga-corta.png" type="image/x-icon">
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="../libreria/bootstrap/css/bootstrap.min.css">
+    <!--CCS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+    <!--Titulo-->
+    <title>Contacto</title>
+</head>
+<body>
+    <!--HTML Semantico-->
+    <header>
+        <nav>
+            <!--Lista Desordenada-->
+            <ul class="flex-container">
+                <li>
+                    <!--Logo de la pagina-->
+                    <a href="../index.html">
+                        <img src="../assets/icons/camiseta-de-manga-corta.png" alt="Logo" class="caja c1">
+                    </a>
+                </li>
+                <li class="caja c2">
+                    <a href="../index.html">HOME</a>
+                </li>
+                <li class="caja c3">
+                    <a href="./productos.html">PRODUCTOS</a>
+                </li>
+                <li class="caja c4">
+                    <a href="./envios-y-retiro.html">ENVIOS Y RETIROS</a>
+                </li>
+                <li class="caja c5">
+                    <a href="./preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                </li>
+                <li class="caja c6">
+                    <a href="#">CONTACTOS</a>   
+                </li>
+                <li>
+                    <!--Carro de compras-->
+                    <img src="../assets/icons/carrito-de-compras.png" alt="Carro-de-compra" class="caja c7">            
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Encabezado-->
+        <h1>
+            Contacto
+        </h1>
+        <h2>
+            Ponte en contacto con nosotros
+        </h2>
+        <!--Formulario-->
+        <form action="procesar.php" method="post">
+            <!--Input Nombre-->
+            <div>
+                <label for="nombre">Nombre*</label>
+                <input type="text" name="nombre" placeholder="Rodrigo" required>
+            </div>
+            <!--Input Email-->
+            <div class="">
+                <label for="email">Correo Electronico*</label>
+                <input type="email" name="email" placeholder="example@example.com" required>
+            </div>
+            <!--Input Telefono-->
+            <div>
+                <label for="telefono">Telefono</label>
+                <input type="tel" name="telefono" placeholder="+569">
+            </div>
+            <!--Textaarea-->
+            <div>
+                <label for="mensaje">Mensaje*</label required>
+            </div>
+            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
+            <!--Button Enviar-->
+            <button type="submit">Enviar</button>
+            <!--Button Reset-->
+            <button type="reset">Borrar</button>
+        </form>
+    </main>
+<!--Bootstrap JS-->
+<script src="../libreria/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
