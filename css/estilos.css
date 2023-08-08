@@ -16,18 +16,19 @@
     /*definimos cual va  ser nuestro Main axis y cual, o si será fila o columna*/
     flex-direction: row;
     /*dispone los elementos flexibles en el eje principal*/
-    justify-content: space-between;
+    justify-content: center;
     /*dispone los elementos flexibles en el eje secundario*/
-    align-items: space;
+    align-items: center;
     /*defino el desborde de los flex items*/
     flex-wrap: wrap;
-    align-content: space-evenly;
+    align-content: center;
     /*Boxmodeling*/
     background-color: #407c87;
-    height: 240px;
+    height: 100%;
     list-style-type: none;
     text-decoration: none;
 }
+
 
 .caja{
     /*box modeling*/
@@ -61,9 +62,47 @@
 
 }
 
-h1{
+/*h1{
     background-color: #a5dbdd;
 }
+
 h2{
     background-color: #a5dbdd;   
+}*/
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.carrito{
+    width: 40px;
+    height: 40px;
+}
+
+.carrusel{
+    background-color: #a5dbdd;
+    height: 1000%;
+    left: 0;
+    top: 0;
+    padding: 15px 80px;
+
+}
+.navbts{
+    background-color: #407c87;
+}
+
+
+.logofooter{
+    width: 20px;
+    height: 20px;
+}
+.background{
+    background-color: #407c87;
+}
+.background-claro{
+    background-color: #a5dbdd;
+}
+.background-formulario{
+    background-color: #D3E1E2;
 }

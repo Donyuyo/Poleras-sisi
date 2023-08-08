@@ -13,74 +13,182 @@
     <title>Poleras Sisi - Home</title>
 </head>
 <body>
-    <!--HTML Semantico--> 
     <header>
-    <nav>
-        <!--Lista Desordenada-->
-        <ul class="flex-container">
-            <li>
-                <!--Logo de la pagina-->
-                <a href="#">
-                    <img src="./assets/icons/camiseta-de-manga-corta.png" alt="Logo" class="caja c1" >
+        <!--Navab con BTS-->
+        <nav class="navbar navbar-expand-lg navbts">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">
+                    <img class="logo" src="./assets/icons/camiseta-de-manga-corta.png" alt="Logo">
                 </a>
-            </li>
-            <li class="caja c2">
-                <a href="#">HOME</a>
-            </li>
-            <li class="caja c3">
-                <a href="./paginas/productos.html">PRODUCTOS</a>
-            </li>
-            <li class="caja c4">
-                <a href="./paginas/envios-y-retiro.html">ENVIOS Y RETIROS</a>
-            </li>
-            <li class="caja c5">
-                <a href="./paginas/preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
-            </li>
-            <li class="caja c6">
-                <a href="./paginas/contactos.html">CONTACTOS</a>   
-            </li>
-            <li>
-                <!--Carro de compras-->
-                <img src="./assets/icons/carrito-de-compras.png" alt="Carro-de-compras" class="caja c7">
-            </li>
-        </ul>
-    </nav>
-</header>
-    <div class="flex-head">
-        <img src="./assets/imagenes/ilustra1.png" alt="Ilustracion de inicio" class="ilustracion1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/envios-y-retiro.html">ENVÍOS Y RETIROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./paginas/contactos.html">CONTACTOS</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="carrito" src="./assets/icons/carrito-de-compras.png" alt="Carrito de compras">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    <!--Carrusel BTS-->
+        <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/imagenes/ilustra1.png" class="carrusel d-block w-100" alt="Ilistracion1">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imagenes/ilustra2.png" class="carrusel d-block w-100" alt="Ilustracion2">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/imagenes/Ilustra3.png" class="carrusel d-block w-100" alt="Ilustracion3">
+            </div>
+            </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+        </div>
+        <!--Poleras com Cards BTS-->
+        <div class="d-flex flex-row justify-content-center align-items-center">
+            <h2>Poleras</h2>
+        </div>
+    <div class="container">
+        <div class="row g-3">
+            <!--Polera 1-->
+            <div class="col-sm-12 col-lg-4 d-flex flex-row justify-content-center align-items-center">
+                <div class="card border-dark mb-3" style="width: 18rem;">
+                    <img src="./assets/imagenes/bananin.png" class="card-img-top" alt="Polera Bananin">
+                    <div class="card-body">
+                        <h5 class="card-title">Polera Bananin</h5>
+                        <p class="card-text">$00.000CLP</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!--Polera 2-->
+            <div class="col-sm-12 col-lg-4 d-flex flex-row justify-content-center align-items-center">
+                <div class="card border-dark mb-3" style="width: 18rem;">
+                    <img src="./assets/imagenes/payasin.png" class="card-img-top" alt="Polera Payasin">
+                    <div class="card-body">
+                        <h5 class="card-title">Polera Payasin</h5>
+                        <p class="card-text">$00.000CLP</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+            <!--Polera 3-->
+            <div class="col-sm-12 col-lg-4 d-flex flex-row justify-content-center align-items-center">
+                <div class="card border-dark mb-3" style="width: 18rem;">
+                    <img src="./assets/imagenes/tomatin.png" class="card-img-top" alt="Polera Tomatin">
+                    <div class="card-body">
+                        <h5 class="card-title">Polera Tomatin</h5>
+                        <p class="card-text">$00.000CLP</p>
+                        <a href="#" class="btn btn-primary">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-        <main>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l-iRkfZ-GvQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <!--Lista Ordenada-->
-            <ol>
-                <li>
-                    Poleras de Anime
-                </li>
-                <li>
-                    Poleras de Bandas
-                </li>
-                <li>
-                    Poleras de Memes
-                </li>
-                <li>
-                    Poleras Personalisadas
-                </li>
-            </ol>
-            <section>
-                <article>
-                    <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet consequuntur odio dolor consequatur eius cupiditate labore nisi modi dolores velit.
-                    </p>
-                </article>
-            </section>
-        </main>
-        <aside>
-            publicidad, banners, etc
-        </aside>
-        <footer>
-            pie de pagina
-            desarrollo con la comision 58035
-        </footer>
+
+<!--Quienes Somos con iframe-->
+
+<div class="container-fluid">
+    <div class="row p-5 pb-2 background">
+        <p class="h3 text-center">
+            Quienes Somos?
+            Te lo dejamos todo en ese video explicativo
+        </p>
+        <div class="col-sm-12 col-lg-6 mx-auto">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/xxta9mBP5X8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+<!--Footer-->
+<footer>
+    <div class="container-fluid">
+        <div class="row p-5 pb-2 bg-dark text-white">
+            <div class="col-sm--12 col-lg-3">
+                <a href="#">
+                    <img class="logo" src="./assets/icons/camiseta-de-manga-corta.png" alt="Logo">
+                </a>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+                <p class="h5 mb-3">Productos</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Poleras</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Polerones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Más</a>
+                </div>
+            </div>
+            <div class="col-sm--12 col-lg-3">
+                <p class="h5 mb-3">Links</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Terms and Conditions</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="col-sm--12 col-lg-3">
+                <p class="h5 mb-3">Contactos</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">
+                        <img class="logofooter" src="./assets/icons/instagram.png" alt="Insta">
+                    Poleras_Sisi</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">
+                        <img class="logofooter" src="./assets/icons/whatsapp.png" alt="whatsapp">
+                    +569000000000</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">
+                        <img class="logofooter" src="./assets/icons/envelope-regular-24.png" alt="">
+                    Poleras.sisi@poleras.com</a>
+                </div>
+            </div>
+            <div class="col-sm-12 pt-3">
+                <p class="text-white text-center">Copy Right - All Rights reserved © 2023</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!--Bootstrap JS-->
 <script src="./libreria/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

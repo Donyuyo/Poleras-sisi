@@ -13,75 +13,168 @@
     <title>Contacto</title>
 </head>
 <body>
-    <!--HTML Semantico-->
     <header>
-        <nav>
-            <!--Lista Desordenada-->
-            <ul class="flex-container">
-                <li>
-                    <!--Logo de la pagina-->
-                    <a href="../index.html">
-                        <img src="../assets/icons/camiseta-de-manga-corta.png" alt="Logo" class="caja c1">
-                    </a>
-                </li>
-                <li class="caja c2">
-                    <a href="../index.html">HOME</a>
-                </li>
-                <li class="caja c3">
-                    <a href="./productos.html">PRODUCTOS</a>
-                </li>
-                <li class="caja c4">
-                    <a href="./envios-y-retiro.html">ENVIOS Y RETIROS</a>
-                </li>
-                <li class="caja c5">
-                    <a href="./preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
-                </li>
-                <li class="caja c6">
-                    <a href="#">CONTACTOS</a>   
-                </li>
-                <li>
-                    <!--Carro de compras-->
-                    <img src="../assets/icons/carrito-de-compras.png" alt="Carro-de-compra" class="caja c7">            
-                </li>
-            </ul>
+        <!--Navab con BTS-->
+        <nav class="navbar navbar-expand-lg navbts">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="../index.html">
+                    <img class="logo" src="../assets/icons/camiseta-de-manga-corta.png" alt="Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/productos.html">PRODUCTOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/envios-y-retiro.html">ENVÍOS Y RETIROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/preguntas-frecuentes.html">PREGUNTAS FRECUENTES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACTOS</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img class="carrito" src="../assets/icons/carrito-de-compras.png" alt="Carrito de compras">
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </div>
         </nav>
     </header>
     <main>
-        <!--Encabezado-->
-        <h1>
-            Contacto
-        </h1>
-        <h2>
-            Ponte en contacto con nosotros
-        </h2>
+        <div class="container-fluid">
+            <div class="row p-2 pb-2 background-claro">
+                <h1 class="text-center">
+                    Contacto
+                </h1>
+                <h2 class="text-center">
+                    Ponte en contacto con nosotros
+                </h2>
+            </div>
+        </div>
         <!--Formulario-->
-        <form action="procesar.php" method="post">
-            <!--Input Nombre-->
-            <div>
-                <label for="nombre">Nombre*</label>
-                <input type="text" name="nombre" placeholder="Rodrigo" required>
+        <div class="container">
+            <div class="row p-3 pb-3">
+                <div class=" background-formulario p-3 pb-10>
+                    <form action="procesar.php" method="post">
+                        <!--Input Nombre-->
+                        <div class="mb-3 mx-auto">
+                            <label for="nombre">Nombre*</label>
+                            <input class="form-control form-control-sm" type="text" name="nombre" placeholder="Rodrigo" required>
+                        </div>
+                        <!--Input Email-->
+                        <div class="mb-3 mx-auto">
+                            <label for="email">Correo Electronico*</label>
+                            <input class="form-control form-control-sm" type="email" name="email" placeholder="example@example.com" required>
+                        </div>
+                        <!--Input Telefono-->
+                        <div class="mb-3 mx-auto">
+                            <label for="telefono">Telefono</label>
+                            <input class="form-control form-control-sm" type="tel" name="telefono" placeholder="+569">
+                        </div>
+                        <!--Textaarea-->
+                        <div class="mb-3 mx-auto">
+                            <label for="mensaje">Mensaje*</label required>
+                        </div>
+                        <textarea class="form-control form-control-sm" name="mensaje" id="" cols="30" rows="10"></textarea>
+                        <div class="text-end">
+                            <!--Button Enviar-->
+                            <button class="btn btn-outline-dark text-center" type="submit">Enviar</button>
+                            <!--Button Reset-->
+                            <button class="btn btn-outline-dark text-center" type="reset">Borrar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <!--Input Email-->
-            <div class="">
-                <label for="email">Correo Electronico*</label>
-                <input type="email" name="email" placeholder="example@example.com" required>
-            </div>
-            <!--Input Telefono-->
-            <div>
-                <label for="telefono">Telefono</label>
-                <input type="tel" name="telefono" placeholder="+569">
-            </div>
-            <!--Textaarea-->
-            <div>
-                <label for="mensaje">Mensaje*</label required>
-            </div>
-            <textarea name="mensaje" id="" cols="30" rows="10"></textarea>
-            <!--Button Enviar-->
-            <button type="submit">Enviar</button>
-            <!--Button Reset-->
-            <button type="reset">Borrar</button>
-        </form>
+        </div>
     </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--Footer-->
+<footer>
+    <div class="container-fluid">
+        <div class="row p-5 pb-2 bg-dark text-white">
+            <div class="col-sm--12 col-lg-3">
+                <a href="#">
+                    <img class="logo" src="../assets/icons/camiseta-de-manga-corta.png" alt="Logo">
+                </a>
+            </div>
+            <div class="col-sm--12 col-lg-3">
+                <p class="h5 mb-3">Productos</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Poleras</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Polerones</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Más</a>
+                </div>
+            </div>
+            <div class="col-sm--12 col-lg-3">
+                <p class="h5 mb-3">Links</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Terms and Conditions</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="col-sm--12 col-lg-3">
+                <p class="h5 mb-3">Contactos</p>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">
+                        <img class="logofooter" src="../assets/icons/instagram.png" alt="Insta">
+                    Poleras_Sisi</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">
+                        <img class="logofooter" src="../assets/icons/whatsapp.png" alt="whatsapp">
+                    +569000000000</a>
+                </div>
+                <div class="mb-2">
+                    <a class="text-secondary text-decoration-none" href="#">
+                        <img class="logofooter" src="../assets/icons/envelope-regular-24.png" alt="">
+                    Poleras.sisi@poleras.com</a>
+                </div>
+            </div>
+            <div class="col-sm-12 pt-3">
+                <p class="text-white text-center">Copy Right - All Rights reserved © 2023</p>
+            </div>
+        </div>
+    </div>
+</footer>
 <!--Bootstrap JS-->
 <script src="../libreria/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
