@@ -1,0 +1,112 @@
+@import "colores";
+/*Variables*/
+
+
+/*Tipografias*/
+@font-face {
+    font-family:'fuente-principal' ;
+    src: url(../assets/fuentes/Poppins/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+/*Selector de tipo Class*/
+/*Flexbox teoría*/
+/*contenedor padre*/
+.flex-container{
+    /*Activamos flex*/
+    display: flex;
+    /*definimos cual va  ser nuestro Main axis y cual, o si será fila o columna*/
+    flex-direction: row;
+    /*dispone los elementos flexibles en el eje principal*/
+    justify-content: center;
+    /*dispone los elementos flexibles en el eje secundario*/
+    align-items: center;
+    /*defino el desborde de los flex items*/
+    flex-wrap: wrap;
+    align-content: center;
+    /*Boxmodeling*/
+    background-color: #407c87;
+    height: 100%;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.caja{
+    /*box modeling*/
+    width: 50px;
+    height: 50px;
+    background-color: #407c87;
+    margin: 5px;
+    /*tipografia*/
+    color: #fff;
+    font-family: 'fuente-principal', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none
+}
+
+.flex-head{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space;
+    align-content: space-evenly;
+    background-color: #a5dbdd;
+    height: 420px;
+}
+
+.ilustracion1{
+    
+    width: 1320px;
+    height: 375px;
+
+}
+
+/*h1{
+    background-color: #a5dbdd;
+}
+
+h2{
+    background-color: #a5dbdd;   
+}*/
+
+.logo{
+    width: 40px;
+    height: 40px;
+}
+
+.carrito{
+    width: 40px;
+    height: 40px;
+}
+
+.carrusel{
+    background-color: #a5dbdd;
+    height: 1000%;
+    left: 0;
+    top: 0;
+    padding: 15px 80px;
+
+}
+.navbts{
+    background-color: #407c87;
+}
+
+
+.logofooter{
+    width: 20px;
+    height: 20px;
+}
+.background{
+    background-color: #407c87;
+}
+.background-claro{
+    background-color: #a5dbdd;
+}
+.background-formulario{
+    background-color: #D3E1E2;
+}
