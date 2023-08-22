@@ -1,6 +1,9 @@
 @import "colores";
-/*Variables*/
+@import "navegacion";
+@import "fuentes";
+@import "footer";
 
+/*Variables*/
 
 /*Tipografias*/
 @font-face {
@@ -27,22 +30,21 @@
     flex-wrap: wrap;
     align-content: center;
     /*Boxmodeling*/
-    background-color: #407c87;
+    background-color: $color-principal;
     height: 100%;
     list-style-type: none;
     text-decoration: none;
 }
 
-
 .caja{
     /*box modeling*/
     width: 50px;
     height: 50px;
-    background-color: #407c87;
+    background-color:$color-principal;
     margin: 5px;
     /*tipografia*/
     color: #fff;
-    font-family: 'fuente-principal', sans-serif;
+    font-family: $fuente-principal;
     font-weight: bold;
     text-align: center;
     text-decoration: none
@@ -55,24 +57,15 @@
     justify-content: center;
     align-items: space;
     align-content: space-evenly;
-    background-color: #a5dbdd;
+    background-color: $color-secundario;
     height: 420px;
 }
 
 .ilustracion1{
-    
     width: 1320px;
     height: 375px;
-
 }
 
-/*h1{
-    background-color: #a5dbdd;
-}
-
-h2{
-    background-color: #a5dbdd;   
-}*/
 
 .logo{
     width: 40px;
@@ -85,15 +78,18 @@ h2{
 }
 
 .carrusel{
-    background-color: #a5dbdd;
-    height: 1000%;
-    left: 0;
-    top: 0;
-    padding: 15px 80px;
+    background-image: $color-secundario;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-position: center center;
+    object-fit: cover;
+    image-rendering: auto;
 
 }
 .navbts{
-    background-color: #407c87;
+    background-color: $color-principal;
 }
 
 
@@ -101,12 +97,21 @@ h2{
     width: 20px;
     height: 20px;
 }
-.background{
-    background-color: #407c87;
+
+
+.background-h{
+    background-image: $color-secundario;
 }
-.background-claro{
-    background-color: #a5dbdd;
-}
+
 .background-formulario{
-    background-color: #D3E1E2;
+    background-color: $color-formulario;
+}
+.border-color{
+    background-image: $color-border;
+    border-color: $color-border;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+
 }
