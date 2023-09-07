@@ -36,6 +36,19 @@
     text-decoration: none;
 }
 
+/*hover*/
+.navbar-nav {
+    .nav-item {
+        a.nav-link {
+            color: #000; // Color normal del texto
+            transition: color 0.3s; // Transición suave de color durante 0.3 segundos
+            &:hover {
+                color: #007bff; // Cambia el color del texto en el hover
+            }
+        }
+    }
+}
+
 .caja{
     /*box modeling*/
     width: 50px;
@@ -115,3 +128,68 @@
     border-left-width: 5px;
 
 }
+
+.contenedor{
+    background-color: $color-formulario;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+
+.texto{
+    font-family: $fuente-principal;
+    color: #000;
+    font-size: 24px;
+    }
+&.contenedor{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+// Media query para dispositivos móviles
+@media screen and (max-width: 767px) {
+    max-width: 100%;
+    padding: 5px;
+    .texto {
+        font-size: 18px;
+    }
+    }
+}
+
+.imagenes{
+    img.img-fluid {
+        max-width: 100px;
+        height: 100px;
+        //Media query para dispositivos moviles
+        @media (min-width: 768px) {
+        max-width: 300px;
+        }
+    }
+}
+// Variables para colores
+$color-normal: #007bff;
+$color-hover: #0056b3;
+
+//Animacion boton
+.animacionBoton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $color-normal;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+    &:hover {
+    background-color: $color-hover;
+    }
+}
+
+
+
+
+
+
