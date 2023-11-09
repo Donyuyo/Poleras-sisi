@@ -171,5 +171,8 @@
 .animacionBoton:hover {
   background-color: #0056b3;
 }
-
+.btn-masmenos {
+  font-size: 0.7rem; 
+  margin: 0.2rem; 
+}
 /*# sourceMappingURL=estilos.css.map */
