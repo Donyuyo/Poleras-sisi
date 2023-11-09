@@ -1,0 +1,67 @@
+{
+    "baseDeDatos": [
+        {
+            "id":1,
+            "nombre": "Polera Bananin",
+            "precio": 12500,
+            "imagen": "../assets/imagenes/bananin.png",
+            "stock": 10
+        },
+        {
+            "id": 2,
+            "nombre": "Polera Payasin",
+            "precio": 15000,
+            "imagen": "../assets/imagenes/payasin.png",
+            "stock": 5
+        },
+        {
+            "id": 3,
+            "nombre": "Polera Tomatin",
+            "precio": 13000,
+            "imagen": "../assets/imagenes/tomatin.png",
+            "stock": 9
+        },
+        {
+            "id": 4,
+            "nombre": "Poleron Bananin",
+            "precio": 30000,
+            "imagen": "../assets/imagenes/Poleron bananin.jpeg",
+            "stock": 7
+        },
+        {
+            "id": 5,
+            "nombre": "Poleron Payasin",
+            "precio": 35000,
+            "imagen": "../assets/imagenes/Poleron payasin.jpeg",
+            "stock": 12
+        },
+        {
+            "id": 6,
+            "nombre": "Poleron Tomatin",
+            "precio": 40000,
+            "imagen": "../assets/imagenes/Poleron tomatin.jpeg",
+            "stock": 3
+        },
+        {
+            "id": 7,
+            "nombre": "Mochila",
+            "precio": 40000,
+            "imagen": "../assets/imagenes/mochila.png",
+            "stock": 5
+        },
+        {
+            "id": 8,
+            "nombre": "Botella",
+            "precio": 30000,
+            "imagen": "../assets/imagenes/botella.png",
+            "stock": 10
+        },
+        {
+            "id": 9,
+            "nombre": "Juego de Cartas",
+            "precio": 10000,
+            "imagen": "../assets/imagenes/juego de cartas.png",
+            "stock": 30
+        }
+    ]
+}
