@@ -13,16 +13,14 @@ document.addEventListener('DOMContentLoaded', () => {
         try {
             const response = await fetch('productos.json');
             const data = await response.json();
-            baseDeDatos = data.baseDeDatos; // Modifica esta línea
+            baseDeDatos = data.baseDeDatos;
             renderizarProductos();
         } catch (error) {
             console.error('Error al cargar los productos:', error);
         }
     };
 
-    // Llama a la función cargarProductos al cargar el DOM
     cargarProductos();
-
     const renderizarProductos = () => {
         baseDeDatos.forEach(info => {
             const miNodo = document.createElement('div');
@@ -63,7 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             carrito.push(productoId);
             productoSeleccionado.stock--;
             renderizarCarrito();
-            actualizarContadorCarrito(); // Actualiza el contador
+            actualizarContadorCarrito();
         } else {
             Swal.fire({
                 icon: "error",
@@ -145,7 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const vaciarCarrito = () => {
-        // Restaurar el stock de los productos en el carrito
         carrito.forEach(item => {
             const productoSeleccionado = baseDeDatos.find(producto => producto.id === parseInt(item));
             if (productoSeleccionado) {
@@ -153,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 carrito = [];
                 renderizarCarrito();
                 localStorage.clear();
-                actualizarContadorCarrito(); // Restablece el contador a 0
+                actualizarContadorCarrito();
             }
         });
 
